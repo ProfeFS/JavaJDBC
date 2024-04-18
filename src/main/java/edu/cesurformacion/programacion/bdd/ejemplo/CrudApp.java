@@ -11,11 +11,15 @@ public class CrudApp {
 		System.out.println("Usuarios:");
 		usuario.readUsuarios().forEach(u -> System.out.println(u.getNombre() + ", " + u.getEmail()));
 
-//		// Actualizar usuario
-//		User usuarioToUpdate = new User(1, "Jane Doe Updated", "janeupdate@example.com");
-//		usuario.updateUsuario(usuarioToUpdate);
-//
-//		// Eliminar usuario
-//		usuario.deleteUsuario(1);
+		// Actualizar usuario
+		User usuarioToUpdate = new User(1, "José", "joseupdate@hola.com");
+		usuario.updateUsuario(usuarioToUpdate);
+
+		// Eliminar usuario
+		usuario.deleteUsuario(1);
+
+		// Leer usuarios
+		System.out.println("Usuarios:");
+		usuario.readUsuarios().forEach(u -> System.out.println(u.getNombre() + ", " + u.getEmail()));
 	}
 }

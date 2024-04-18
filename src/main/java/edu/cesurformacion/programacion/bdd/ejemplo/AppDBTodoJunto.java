@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class AppDB {
+public class AppDBTodoJunto {
 
 	public static void main(String[] args) {
 
